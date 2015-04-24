@@ -1,3 +1,6 @@
+# SopUI
+Someoddpilot UI Framework
+
 ## High priority
 Grid
 Expandable
