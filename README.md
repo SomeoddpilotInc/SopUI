@@ -1,5 +1,7 @@
 # SopUI
 
+[![Build Status](https://travis-ci.org/SomeoddpilotInc/SopUI.svg?branch=master)](https://travis-ci.org/SomeoddpilotInc/SopUI)
+
 Someoddpilot UI Framework
 
 ## High priority
