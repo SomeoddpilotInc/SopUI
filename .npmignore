@@ -1,0 +1,13 @@
+node_modules
+test
+*.swp
+_*
+.DS_Store
+.git
+.hg
+.lock-wscript
+.svn
+*~
+npm-debug.log
+.travis.yml
+.editorconfig
