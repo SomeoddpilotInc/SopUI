@@ -1,6 +1,6 @@
 {
   "name": "sop-ui",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "A UI Framework",
   "main": "index.js",
   "scripts": {
