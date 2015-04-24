@@ -1,14 +1,30 @@
 # SopUI
+
 Someoddpilot UI Framework
 
 ## High priority
 
-* Grid
 * Expandable
 * Accordians
 * Buttons
 * Icons - unicode
 * Icons - social
+
+##  Grid
+
+Provides a convenient method to build grid items using inline-block
+
+```stylus
+.foo
+  sop-grid-item(2)
+```
+
+```css
+.foo {
+  display: inline-block;
+  width: 50%;
+}
+```
 
 ## Low priority
 
