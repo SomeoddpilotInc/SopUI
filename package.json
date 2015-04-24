@@ -4,8 +4,16 @@
   "description": "A UI Framework",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -C"
+    "test": "mocha --compilers js:babel/register -C"
   },
   "author": "Alex Robertson <alex@someoddpilot.com>",
-  "license": "none"
+  "license": "none",
+  "devDependencies": {
+    "babel": "^5.1.11",
+    "mocha": "^2.2.4",
+    "should": "^6.0.1"
+  },
+  "dependencies": {
+    "stylus": "^0.51.0"
+  }
 }
