@@ -1,2 +1,50 @@
-sop-button($font-size)
-  font-size $font-size
+sop-button($speed = 0.2)
+  display inline-block
+
+  line-height 1.2em
+
+  text-decoration none
+
+  cursor pointer
+  vertical-align middle
+
+  unless $speed == 0
+    transition all ($speed)s ease
+  backface-visibility(hidden)
+  
+  &:hover
+    text-decoration none
+
+sop-button-color($bg = #000, $text-color = #FFF, $hover-bg, $hover-text)
+  color $text-color
+  background $bg
+
+  &:hover,
+  &:active
+    if $hover-text
+      color $hover-text
+    else
+      color $text-color
+    
+    if $hover-bg
+      background $hover-bg
+    else
+      if lightness($bg) > 90%
+        background darken($bg, 5%)
+      else
+        background lighten($bg, 5%)
+
+  &:focus
+    outline none
+    
+    if $hover-text
+      color $hover-text
+    else
+      color $text-color
+    
+    if lightness($bg) < 10%
+      background lighten($bg, 10%)
+    else if lightness($bg) <= 90%
+      background darken($bg, 5%)
+    else
+      background lighten($bg, 10%)
