@@ -26,6 +26,9 @@ sop-button-colors($bg = $black, $text-color = $white, $hover-bg = null, $hover-t
   background $bg
   color $text-color
 
+  if contrast($bg, $text-color).ratio < (4.5)
+    warn("Background and text color contrast ratio (" + contrast($bg, $text-color).ratio + ") is too small to pass WCAG Level AA acceptance.")
+
   &:hover,
   &:active
     if $hover-bg != null
