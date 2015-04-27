@@ -8,7 +8,13 @@
  *   @media (max-width 320px)
  *     grid-item(1)
  */
-grid-item($divisor)
+sop-grid-item($divisor)
   display inline-block
 
   width (100 / $divisor)%
+
+sop-grid-offset-left($divisor, $amount)
+  margin-left (100 / $divisor * $amount)%
+
+sop-grid-offset-right($divisor, $amount)
+  margin-right (100 / $divisor * $amount)%
