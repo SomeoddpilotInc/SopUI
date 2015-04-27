@@ -11,10 +11,10 @@ sop-button($speed = 0.2, $radius = 0)
   cursor pointer
   vertical-align middle
 
-  unless $speed == 0
+  unless unit($speed, '') <= 0
+    transition all unit($speed, 's') ease
+
   backface-visibility(hidden)
-  
-    transition all $speed ease
 
   border-radius $radius
   border 0
