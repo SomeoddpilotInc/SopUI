@@ -28,6 +28,44 @@ Provides a convenient method to build grid items using inline-block
 }
 ```
 
+##  Expandable
+
+This style of expandable area is activated by toggling classes on click, using jQuery in this example.
+
+```html
+<button class="button">
+  Read More
+  <div class="caret"></div>
+</button>
+<div class="wrapper">
+  Lorem Ipsum
+</div>
+```
+
+```js
+$('.button').on('click', function() {
+  $(this).next('.wrapper').toggleClass("wrapper--open");
+  $(this).find('.caret').toggleClass('caret--rotate');
+});
+```
+
+```stylus
+.wrapper
+  height 0
+  overflow hidden
+
+  transition all .2s
+
+.wrapper--open
+  height auto
+
+.caret
+  transition all .2s
+
+.caret--rotate
+  transform rotate(-180deg)
+```
+
 ## Low priority
 
 * Modal
