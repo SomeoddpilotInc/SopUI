@@ -8,9 +8,7 @@ Someoddpilot UI Framework
 
 ## High priority
 
-* Expandable
 * Accordians
-* Buttons
 * Icons - unicode
 * Icons - social
 
@@ -58,21 +56,25 @@ $('.button').on('click', function() {
 });
 ```
 
-```stylus
-.wrapper
-  height 0
-  overflow hidden
+```css
+.wrapper {
+  height: 0;
+  overflow: hidden;
 
-  transition all .2s
+  transition: all .2s;
+}
 
-.wrapper--open
-  height auto
+.wrapper--open {
+  height: auto;
+}
 
-.caret
-  transition all .2s
+.caret {
+  transition: all .2s;
+}
 
-.caret--rotate
-  transform rotate(-180deg)
+.caret--rotate {
+  transform: rotate(-180deg);
+}
 ```
 
 
