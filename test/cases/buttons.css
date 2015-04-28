@@ -1,0 +1,42 @@
+.sop-button {
+  display: inline-block;
+  line-height: 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: all 2s ease;
+  backface-visibility: hidden;
+  border-radius: 2px;
+  border: 0;
+}
+.sop-button:hover {
+  text-decoration: none;
+}
+.sop-button-colors {
+  background: #036;
+  color: #024;
+}
+.sop-button-colors:hover,
+.sop-button-colors:active {
+  background: #003d7a;
+  color: #024;
+}
+.sop-button-colors:focus {
+  outline: none;
+  background: #003061;
+  color: #024;
+}
+.sop-button-colors-with-custom-hovers {
+  background: #036;
+  color: #024;
+}
+.sop-button-colors-with-custom-hovers:hover,
+.sop-button-colors-with-custom-hovers:active {
+  background: #ddd;
+  color: #aaa;
+}
+.sop-button-colors-with-custom-hovers:focus {
+  outline: none;
+  background: #003061;
+  color: #024;
+}
