@@ -1,0 +1,77 @@
+$icons = {
+  facebook: {
+    default: E800,
+    fill: E80B
+  },
+
+  instagram: {
+    default: E802,
+    fill: E814
+  },
+
+  foursqaure: {
+    default: E808
+  },
+
+  google-plus: {
+    default: E809,
+    fill: E812
+  },
+
+  tumblr: {
+    default: E807,
+    fill: E810
+  },
+
+  twitter: {
+    default: E801,
+    fill: E80C
+  },
+
+  vine: {
+    default: E805
+  },
+
+  yelp: {
+    default: E806
+  },
+
+  youtube: {
+    default: E803,
+    fill: E803
+  },
+
+  pinterest: {
+    default: E80D,
+    fill: E80E,
+    alt: E811
+  },
+
+  vimeo: {
+    default: E813,
+    fill: E80F
+  }
+}
+
+sop-social-icon($name, $fill = null, $alt = null)
+
+  if $name in $icons
+
+    if $alt != null
+      $style = alt
+
+    else if $fill != null
+      $style = fill
+
+    else
+      $style = default
+
+    if length($icons[$name][$style]) > 0
+      content: '"\%s"' % $icons[$name][$style]
+    else
+      content: $icons[$name].default
+      warn("'" + $name + "' icon is not avalabile in the '" + $style + "' style. Default style was subsituted.")
+
+  else
+    warn("'" + $name + "' icon is not avalabile in this library.")
+
