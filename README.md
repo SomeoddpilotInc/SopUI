@@ -12,6 +12,38 @@ Someoddpilot UI Framework
 * Icons - unicode
 * Icons - social
 
+##  Expandable
+
+This style of expandable area is activated by toggling classes on click, using jQuery in this example.
+
+```html
+<button sop-expandable-button>
+  Title
+  <div sop-expandable-caret></div>
+</button>
+<div sop-expandable>
+  Lorem Ipsum
+</div>
+```
+
+```css
+[sop-expandable-caret] {
+  transition: all 0.2s;
+}
+[sop-expandable] {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.sop-expandable--open {
+  height: auto;
+}
+.sop-expandable-caret--rotate {
+  transform: rotate(-180deg);
+}
+
+```
+
 ##  Grid
 
 Provides a convenient method to build grid items using inline-block
@@ -34,49 +66,6 @@ Provides a convenient method to build grid items using inline-block
   margin-left: 25%;
 }
 ```
-
-##  Expandable
-
-This style of expandable area is activated by toggling classes on click, using jQuery in this example.
-
-```html
-<button class="button">
-  Title
-  <div class="caret"></div>
-</button>
-<div class="wrapper">
-  Lorem Ipsum
-</div>
-```
-
-```js
-$('.button').on('click', function() {
-  $(this).next('.wrapper').toggleClass("wrapper--open");
-  $(this).find('.caret').toggleClass('caret--rotate');
-});
-```
-
-```css
-.wrapper {
-  height: 0;
-  overflow: hidden;
-
-  transition: all .2s;
-}
-
-.wrapper--open {
-  height: auto;
-}
-
-.caret {
-  transition: all .2s;
-}
-
-.caret--rotate {
-  transform: rotate(-180deg);
-}
-```
-
 
 ## Low priority
 

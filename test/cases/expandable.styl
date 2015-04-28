@@ -1,14 +1,16 @@
-.wrapper
+[sop-expandable-caret]
+  transition all .2s
+
+[sop-expandable]
   height 0
   overflow hidden
 
   transition all .2s
 
-.wrapper--open
-  height auto
++prefix-classes(sop-expandable)
 
-.caret
-  transition all .2s
+  .--open
+    height auto
 
-.caret--rotate
-  transform rotate(-180deg)
+  .-caret--rotate
+    transform rotate(-180deg)
