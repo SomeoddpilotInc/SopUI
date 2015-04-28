@@ -43,7 +43,7 @@ This style of expandable area is activated by toggling classes on click, using j
 
 ```html
 <button class="button">
-  Read More
+  Title
   <div class="caret"></div>
 </button>
 <div class="wrapper">
