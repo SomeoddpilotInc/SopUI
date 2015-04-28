@@ -1,6 +1,8 @@
 # SopUI
 
 [![Build Status](https://travis-ci.org/SomeoddpilotInc/SopUI.svg?branch=master)](https://travis-ci.org/SomeoddpilotInc/SopUI)
+[![Dependency Status](https://david-dm.org/SomeoddpilotInc/SopUI.svg)](https://david-dm.org/SomeoddpilotInc/SopUI)
+[![devDependency Status](https://david-dm.org/SomeoddpilotInc/SopUI/dev-status.svg)](https://david-dm.org/SomeoddpilotInc/SopUI#info=devDependencies)
 
 Someoddpilot UI Framework
 
