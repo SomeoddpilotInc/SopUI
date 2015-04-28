@@ -66,11 +66,11 @@ sop-social-icon($name, $fill = null, $alt = null)
     else
       $style = default
 
-    if length($icons[$name][$style]) > 0
+    if $icons[$name][$style]
       content: '"\%s"' % $icons[$name][$style]
     else
-      content: $icons[$name].default
       warn("'" + $name + "' icon is not avalabile in the '" + $style + "' style. Default style was subsituted.")
+      content: '"\%s"' % $icons[$name][default]
 
   else
     warn("'" + $name + "' icon is not avalabile in this library.")
