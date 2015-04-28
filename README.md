@@ -135,7 +135,6 @@ This style of expandable area is activated by toggling classes on click, using j
 }
 
 ```
-
 ##  Grid
 
 Provides a convenient method to build grid items using inline-block
