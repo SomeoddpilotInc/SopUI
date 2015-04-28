@@ -1,2 +1,56 @@
-sop-button($font-size)
-  font-size $font-size
+$black ?= #000
+$white ?= #FFF
+
+sop-button($speed = 0.2, $radius = 0)
+  display inline-block
+
+  line-height 1.2em
+
+  text-decoration none
+
+  cursor pointer
+  vertical-align middle
+
+  unless unit($speed, '') <= 0
+    transition all unit($speed, 's') ease
+
+  backface-visibility hidden
+
+  border-radius $radius
+  border 0
+
+  &:hover
+    text-decoration none
+
+sop-button-colors($bg = $black, $text-color = $white, $hover-bg = null, $hover-text = null)
+  background $bg
+  color $text-color
+
+  if contrast($bg, $text-color).ratio < (4.5)
+    warn("Background and text color contrast ratio (" + contrast($bg, $text-color).ratio + ") is too small to pass WCAG Level AA acceptance.")
+
+  &:hover,
+  &:active
+    if $hover-bg != null
+      background $hover-bg
+    else if lightness($bg) > 90%
+      background darken($bg, 5%)
+    else
+      background lighten($bg, 5%)
+
+    if $hover-text != null
+      color $hover-text
+    else
+      color $text-color
+
+  &:focus
+    outline none
+
+    if lightness($bg) < 10%
+      background lighten($bg, 10%)
+    else if lightness($bg) <= 90%
+      background darken($bg, 5%)
+    else
+      background lighten($bg, 10%)
+
+    color $text-color
