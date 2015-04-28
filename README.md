@@ -12,36 +12,97 @@ Someoddpilot UI Framework
 * Icons - unicode
 * Icons - social
 
-##  Expandable
+##  Buttons
 
-This style of expandable area is activated by toggling classes on click, using jQuery in this example.
+Provides a convenient method for basic styles for CTAs complete with hover and focus states. The hover state is customizable, but the focus state is programatically made with normal state values.
 
-```html
-<button sop-expandable-button>
-  Title
-  <div sop-expandable-caret></div>
-</button>
-<div sop-expandable>
-  Lorem Ipsum
-</div>
+*Default button colors are white text on black.*
+
+```stylus
+.foo
+  sop-button(2s, 2px)
+
+.bar
+  sop-button-colors(#036, #024)
+
+.foo-bar
+  sop-button(0)
+  sop-button-colors(#036, #024, #DDD, #AAA)
 ```
 
 ```css
-[sop-expandable-caret] {
-  transition: all 0.2s;
-}
-[sop-expandable] {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.2s;
-}
-.sop-expandable--open {
-  height: auto;
-}
-.sop-expandable-caret--rotate {
-  transform: rotate(-180deg);
+.foo {
+  display: inline-block;
+
+  line-height: 1.2em;
+
+  text-decoration: none;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  transition: all 2s ease;
+  backface-visibility: hidden;
+
+  border-radius: 2px;
+  border: 0;
 }
 
+.foo:hover {
+  text-decoration: none;
+}
+
+.bar {
+  background: #036;
+  color: #024;
+}
+
+.bar:hover,
+.bar:active {
+  background: #003d7a;
+  color: #024;
+}
+
+.bar:focus {
+  outline: none;
+  background: #003061;
+  color: #024;
+}
+
+.foo-bar {
+  display: inline-block;
+
+  line-height: 1.2em;
+
+  text-decoration: none;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  backface-visibility: hidden;
+
+  border-radius: 0;
+  border: 0;
+
+  background: #036;
+  color: #024;
+}
+
+.foo-bar:hover {
+  text-decoration: none;
+}
+
+.foo-bar:hover,
+.foo-bar:active {
+  background: #ddd;
+  color: #aaa;
+}
+
+.foo-bar:focus {
+  outline: none;
+  background: #003061;
+  color: #aaa;
+}
 ```
 
 ##  Grid
@@ -66,6 +127,49 @@ Provides a convenient method to build grid items using inline-block
   margin-left: 25%;
 }
 ```
+
+##  Expandable
+
+This style of expandable area is activated by toggling classes on click, using jQuery in this example.
+
+```html
+<button class="button">
+  Title
+  <div class="caret"></div>
+</button>
+<div class="wrapper">
+  Lorem Ipsum
+</div>
+```
+
+```js
+$('.button').on('click', function() {
+  $(this).next('.wrapper').toggleClass("wrapper--open");
+  $(this).find('.caret').toggleClass('caret--rotate');
+});
+```
+
+```css
+.wrapper {
+  height: 0;
+  overflow: hidden;
+
+  transition: all .2s;
+}
+
+.wrapper--open {
+  height: auto;
+}
+
+.caret {
+  transition: all .2s;
+}
+
+.caret--rotate {
+  transform: rotate(-180deg);
+}
+```
+
 
 ## Low priority
 
