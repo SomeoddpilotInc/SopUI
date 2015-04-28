@@ -1,4 +1,14 @@
 @import 'sop-ui/grid'
 
 .two-up
-  grid-item(2)
+  sop-grid-item(2)
+
+.four-up
+  sop-grid-item(4)
+
+.push-one-over
+  sop-grid-offset-left(4, 1)
+
+.one-tenth-offset-four
+  sop-grid-item(10)
+  sop-grid-offset-left(10, 4)

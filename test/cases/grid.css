@@ -2,3 +2,15 @@
   display: inline-block;
   width: 50%;
 }
+.four-up {
+  display: inline-block;
+  width: 25%;
+}
+.push-one-over {
+  margin-left: 25%;
+}
+.one-tenth-offset-four {
+  display: inline-block;
+  width: 10%;
+  margin-left: 40%;
+}

@@ -19,12 +19,19 @@ Provides a convenient method to build grid items using inline-block
 ```stylus
 .foo
   sop-grid-item(2)
+
+.bar
+  sop-grid-offset-left(4, 1)
 ```
 
 ```css
 .foo {
   display: inline-block;
   width: 50%;
+}
+
+.bar {
+  margin-left: 25%;
 }
 ```
 
