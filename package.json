@@ -11,6 +11,20 @@
     "Kamil Kecki <kamil@someoddpilot.com>",
     "Meghan Morris <meghan@someoddpilot.com>"
   ],
+  "keywords": [
+    "stylus",
+    "framework",
+    "someoddpilot",
+    "stylus framework",
+    "someoddpilot stylus framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/SomeoddpilotInc/SopUI/issues"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/SomeoddpilotInc/SopUI.git"
+  },
   "license": "none",
   "devDependencies": {
     "babel": "^5.1.11",
