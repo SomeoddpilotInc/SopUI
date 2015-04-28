@@ -7,6 +7,10 @@
     "test": "mocha --compilers js:babel/register -C"
   },
   "author": "Alex Robertson <alex@someoddpilot.com>",
+  "contributors": [
+    "Kamil Kecki <kamil@someoddpilot.com>",
+    "Meghan Morris <meghan@someoddpilot.com>"
+  ],
   "license": "none",
   "devDependencies": {
     "babel": "^5.1.11",
