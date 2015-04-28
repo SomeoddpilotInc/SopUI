@@ -1,16 +1,109 @@
 # SopUI
 
 [![Build Status](https://travis-ci.org/SomeoddpilotInc/SopUI.svg?branch=master)](https://travis-ci.org/SomeoddpilotInc/SopUI)
+[![Dependency Status](https://david-dm.org/SomeoddpilotInc/SopUI.svg)](https://david-dm.org/SomeoddpilotInc/SopUI)
+[![devDependency Status](https://david-dm.org/SomeoddpilotInc/SopUI/dev-status.svg)](https://david-dm.org/SomeoddpilotInc/SopUI#info=devDependencies)
 
 Someoddpilot UI Framework
 
 ## High priority
 
-* Expandable
 * Accordians
-* Buttons
 * Icons - unicode
 * Icons - social
+
+##  Buttons
+
+Provides a convenient method for basic styles for CTAs complete with hover and focus states. The hover state is customizable, but the focus state is programatically made with normal state values.
+
+*Default button colors are white text on black.*
+
+```stylus
+.foo
+  sop-button(2s, 2px)
+
+.bar
+  sop-button-colors(#036, #024)
+
+.foo-bar
+  sop-button(0)
+  sop-button-colors(#036, #024, #DDD, #AAA)
+```
+
+```css
+.foo {
+  display: inline-block;
+
+  line-height: 1.2em;
+
+  text-decoration: none;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  transition: all 2s ease;
+  backface-visibility: hidden;
+
+  border-radius: 2px;
+  border: 0;
+}
+
+.foo:hover {
+  text-decoration: none;
+}
+
+.bar {
+  background: #036;
+  color: #024;
+}
+
+.bar:hover,
+.bar:active {
+  background: #003d7a;
+  color: #024;
+}
+
+.bar:focus {
+  outline: none;
+  background: #003061;
+  color: #024;
+}
+
+.foo-bar {
+  display: inline-block;
+
+  line-height: 1.2em;
+
+  text-decoration: none;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  backface-visibility: hidden;
+
+  border-radius: 0;
+  border: 0;
+
+  background: #036;
+  color: #024;
+}
+
+.foo-bar:hover {
+  text-decoration: none;
+}
+
+.foo-bar:hover,
+.foo-bar:active {
+  background: #ddd;
+  color: #aaa;
+}
+
+.foo-bar:focus {
+  outline: none;
+  background: #003061;
+  color: #aaa;
+}
+```
 
 ##  Grid
 
@@ -41,7 +134,7 @@ This style of expandable area is activated by toggling classes on click, using j
 
 ```html
 <button class="button">
-  Read More
+  Title
   <div class="caret"></div>
 </button>
 <div class="wrapper">
@@ -56,21 +149,25 @@ $('.button').on('click', function() {
 });
 ```
 
-```stylus
-.wrapper
-  height 0
-  overflow hidden
+```css
+.wrapper {
+  height: 0;
+  overflow: hidden;
 
-  transition all .2s
+  transition: all .2s;
+}
 
-.wrapper--open
-  height auto
+.wrapper--open {
+  height: auto;
+}
 
-.caret
-  transition all .2s
+.caret {
+  transition: all .2s;
+}
 
-.caret--rotate
-  transform rotate(-180deg)
+.caret--rotate {
+  transform: rotate(-180deg);
+}
 ```
 
 

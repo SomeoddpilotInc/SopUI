@@ -1,12 +1,30 @@
 {
   "name": "sop-ui",
-  "version": "0.0.1-0",
+  "version": "0.0.1-1",
   "description": "A UI Framework",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register -C"
   },
   "author": "Alex Robertson <alex@someoddpilot.com>",
+  "contributors": [
+    "Kamil Kecki <kamil@someoddpilot.com>",
+    "Meghan Morris <meghan@someoddpilot.com>"
+  ],
+  "keywords": [
+    "stylus",
+    "framework",
+    "someoddpilot",
+    "stylus framework",
+    "someoddpilot stylus framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/SomeoddpilotInc/SopUI/issues"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/SomeoddpilotInc/SopUI.git"
+  },
   "license": "none",
   "devDependencies": {
     "babel": "^5.1.11",
