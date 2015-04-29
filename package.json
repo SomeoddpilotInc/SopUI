@@ -22,8 +22,8 @@
     "url": "https://github.com/SomeoddpilotInc/SopUI/issues"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/SomeoddpilotInc/SopUI.git"
+    "type": "git",
+    "url": "https://github.com/SomeoddpilotInc/SopUI.git"
   },
   "license": "none",
   "devDependencies": {
@@ -32,6 +32,7 @@
     "should": "^6.0.1"
   },
   "dependencies": {
+    "sop-styl": "^1.5.0",
     "stylus": "^0.51.0"
   }
 }
