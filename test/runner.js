@@ -2,13 +2,29 @@ import stylus from 'stylus';
 import sopUI from '../lib';
 import fs from 'fs';
 
+/**
+ * Tests if styl file
+ *
+ * @param {String} file filename
+ * @returns {Boolean} whether filename matches '.styl'
+ */
+function filterStylFiles(file) {
+  return file.match(/\.styl$/);
+}
+
+/**
+ * Replaces `.styl` in filename
+ *
+ * @param {String} file filename
+ * @returns {String} filename
+ */
+function replaceFilename(file) {
+  return file.replace('.styl', '');
+}
+
 const cases = fs.readdirSync('test/cases')
-  .filter(function (file) {
-    return file.match(/\.styl$/);
-  })
-  .map(function (file) {
-    return file.replace('.styl', '');
-  });
+  .filter(filterStylFiles)
+  .map(replaceFilename);
 
 describe('integration', function describeIntegration() {
   cases.forEach(function testCase(test) {
