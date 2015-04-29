@@ -1,18 +1,14 @@
-.wrapper {
+[sop-expandable-caret] {
+  transition: all 0.2s;
+}
+[sop-expandable] {
   height: 0;
   overflow: hidden;
-
-  transition: all .2s;
+  transition: all 0.2s;
 }
-
-.wrapper--open {
+.sop-expandable--open {
   height: auto;
 }
-
-.caret {
-  transition: all .2s;
-}
-
-.caret--rotate {
+.sop-expandable-caret--rotate {
   transform: rotate(-180deg);
 }
