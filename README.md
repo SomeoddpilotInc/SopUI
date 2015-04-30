@@ -186,3 +186,4 @@ Shortcut for commonly used social icons. This mixin includes the `fontello-icon(
 * Baseline content
 * Tooltip
 * Forms
+* Icons - Common SOP custom icons(?)
