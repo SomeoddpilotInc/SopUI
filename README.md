@@ -9,8 +9,6 @@ Someoddpilot UI Framework
 ## High priority
 
 * Accordians
-* Icons - unicode
-* Icons - social
 
 ##  Buttons
 
@@ -159,6 +157,23 @@ Provides a convenient method to build grid items using inline-block
 }
 ```
 
+## Icons
+
+### Social
+
+Shortcut for commonly used social icons. This mixin includes the `fontello-icon()` mixin from `sop-styl`. Supports default, fill, and alt styles. Any missing requested icons/styles will result in a warning.
+
+```stylus
+.i-want-a-facebook-icon:after
+  sop-social-icon(facebook)
+
+.i-want-a-filled-vimeo-icon:after
+  sop-social-icon(vimeo, fill)
+
+.i-want-the-alt-filled-pinterest-icon:after
+  sop-social-icon(pinterest, fill, alt)
+```
+
 ## Low priority
 
 * Modal
@@ -171,3 +186,4 @@ Provides a convenient method to build grid items using inline-block
 * Baseline content
 * Tooltip
 * Forms
+* Icons - Common SOP custom icons(?)
