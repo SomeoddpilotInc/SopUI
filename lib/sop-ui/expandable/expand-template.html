@@ -1,0 +1,11 @@
+<div ng-repeat="expandable in sopExpand.expandables"
+  ng-click="sopExpand.change()"
+  ng-class="'sop-expandable--' + sopExpand.state">
+  <button sop-expandable-button>
+    {{expandable.title}}
+    <div sop-expandable-caret></div>
+  </button>
+  <div sop-expandable>
+    {{expandable.content}}
+  </div>
+</div>

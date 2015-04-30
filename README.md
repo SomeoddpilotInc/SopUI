@@ -69,6 +69,8 @@ Provides a convenient method for basic styles for CTAs complete with hover and f
 ```
 ##  Expandable
 
+### jQuery
+
 This style of expandable area is activated by toggling classes on click, using jQuery in this example.
 
 ```html
@@ -90,13 +92,42 @@ This style of expandable area is activated by toggling classes on click, using j
   overflow: hidden;
   transition: all 0.2s;
 }
-.sop-expandable--open {
+.sop-expandable--open [sop-expandable] {
   height: auto;
 }
-.sop-expandable-caret--rotate {
+.sop-expandable--open [sop-expandable-caret] {
   transform: rotate(-180deg);
 }
 
+```
+
+### Angular
+
+This style of expandable area utilizes Angular and uses the same CSS as the jQuery build.
+
+```html
+<div sop-expand>
+```
+
+```json
+[
+  {
+    "title": "Title 1",
+    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+
+  {
+    "title": "Title 2",
+    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  }
+]
+```
+
+```js
+require('/path/angular');
+require('/path/sop-expandable-angular');
+
+angular.module('myApp', ['sopExapandable']);
 ```
 
 ##  Grid

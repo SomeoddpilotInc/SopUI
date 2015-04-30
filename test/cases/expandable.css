@@ -6,9 +6,9 @@
   overflow: hidden;
   transition: all 0.2s;
 }
-.sop-expandable--open {
+.sop-expandable--open [sop-expandable] {
   height: auto;
 }
-.sop-expandable-caret--rotate {
+.sop-expandable--open [sop-expandable-caret] {
   transform: rotate(-180deg);
 }
