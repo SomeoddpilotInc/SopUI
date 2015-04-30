@@ -7,11 +7,9 @@
 
   transition all .2s
 
-+prefix-classes(sop-expandable)
+.sop-expandable--open
+  [sop-expandable]
+    height auto
 
-  .--open
-    [sop-expandable]
-      height auto
-
-    [sop-expandable-caret]
-      transform rotate(-180deg)
+  [sop-expandable-caret]
+    transform rotate(-180deg)
