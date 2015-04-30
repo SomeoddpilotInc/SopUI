@@ -67,41 +67,6 @@ Provides a convenient method for basic styles for CTAs complete with hover and f
   background: #003061;
   color: #024;
 }
-
-.foo-bar {
-  display: inline-block;
-
-  line-height: 1.2em;
-
-  text-decoration: none;
-
-  cursor: pointer;
-  vertical-align: middle;
-
-  backface-visibility: hidden;
-
-  border-radius: 0;
-  border: 0;
-
-  background: #036;
-  color: #024;
-}
-
-.foo-bar:hover {
-  text-decoration: none;
-}
-
-.foo-bar:hover,
-.foo-bar:active {
-  background: #ddd;
-  color: #aaa;
-}
-
-.foo-bar:focus {
-  outline: none;
-  background: #003061;
-  color: #aaa;
-}
 ```
 
 ##  Grid
