@@ -107,6 +107,7 @@ This style of expandable area utilizes Angular and uses the same CSS as the jQue
 
 ```html
 <div sop-expand>
+</div>
 ```
 
 ```json
