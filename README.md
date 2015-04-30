@@ -106,8 +106,7 @@ This style of expandable area is activated by toggling classes on click, using j
 This style of expandable area utilizes Angular and uses the same CSS as the jQuery build.
 
 ```html
-<div sop-expand>
-</div>
+<div sop-expand></div>
 ```
 
 ```json
