@@ -1,5 +1,5 @@
 <div ng-click="sopExpand.change()"
-  ng-class="'sop-expandable--' + sopExpand.state">
+  ng-class="{'sop-expandable--open' : sopExpand.open, 'sop-expandable--closed' : !sopExpand.open }">
   <button sop-expandable-button>
     {{ title }}
     <div sop-expandable-caret></div>

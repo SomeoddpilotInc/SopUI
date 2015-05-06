@@ -109,21 +109,14 @@ This style of expandable area utilizes Angular and uses the same CSS as the jQue
 <div sop-expand title="Some name">
   Loreem ipsum
 </div>
+<div sop-expand title="Some name" no-caret="false" open="false">
+  Loreem ipsum
+</div>
+<div sop-expand title="Some name" no-caret open>
+  Loreem ipsum
+</div>
 ```
-
-```json
-[
-  {
-    "title": "Title 1",
-    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-  },
-
-  {
-    "title": "Title 2",
-    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-  }
-]
-```
+*The first two examples will render the same way*
 
 ```js
 require('/path/angular');
