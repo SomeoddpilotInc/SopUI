@@ -121,6 +121,14 @@ This style of expandable area is activated by toggling classes on click, using j
 </div>
 {% endraw %}{% endhighlight %}
 
+<button sop-expandable-button>
+  Title
+  <div sop-expandable-caret></div>
+</button>
+<div sop-expandable>
+  Lorem Ipsum
+</div>
+
 {% highlight css %}{% raw %}
 [sop-expandable-caret] {
   transition: all 0.2s;
@@ -161,16 +169,3 @@ Provides a convenient method to build grid items using inline-block
   margin-left: 25%;
 }
 {% endraw %}{% endhighlight %}
-
-## Low priority
-
-* Modal
-* Scrollspy
-* Video
-* Slider
-* Feed
-* Dropdown
-* Push menu
-* Baseline content
-* Tooltip
-* Forms
