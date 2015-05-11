@@ -21,7 +21,7 @@ Provides a convenient method for basic styles for CTAs complete with hover and f
 
 *Default button colors are white text on black.*
 
-{% highlight stylus %}{% raw %}
+{% highlight css %}{% raw %}
 .foo
   sop-button(2s, 2px)
 
@@ -143,7 +143,7 @@ This style of expandable area is activated by toggling classes on click, using j
 
 Provides a convenient method to build grid items using inline-block
 
-{% highlight stylus %}{% raw %}
+{% highlight css %}{% raw %}
 .foo
   sop-grid-item(2)
 
