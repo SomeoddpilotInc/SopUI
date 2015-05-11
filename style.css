@@ -1,0 +1,12 @@
+.sopui {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+.wf-opensans-n7-active .sopui {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sopui-container {
+  max-width: 55em;
+  margin: 0 auto;
+}
