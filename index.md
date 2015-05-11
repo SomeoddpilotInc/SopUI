@@ -121,16 +121,6 @@ This style of expandable area is activated by toggling classes on click, using j
 </div>
 {% endraw %}{% endhighlight %}
 
-{% raw %}
-<button sop-expandable-button>
-  Title
-  <div sop-expandable-caret></div>
-</button>
-<div sop-expandable>
-  Lorem Ipsum
-</div>
-{% endraw %}
-
 {% highlight css %}{% raw %}
 [sop-expandable-caret] {
   transition: all 0.2s;
